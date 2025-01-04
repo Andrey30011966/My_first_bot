@@ -7,6 +7,9 @@ start_kb = ReplyKeyboardMarkup(
         [
             KeyboardButton(text='Стоимость'),
             KeyboardButton(text='О нас'),
+        ],
+        [
+            KeyboardButton(text='Купить')
         ]
     ], resize_keyboard=True
 )
@@ -23,5 +26,15 @@ catalog_kb = InlineKeyboardMarkup(
 buy_kb = InlineKeyboardMarkup(
     inline_keyboard=[
         [InlineKeyboardButton(text='Купить', url='http://ya.ru')],
+        [InlineKeyboardButton(text='Назад', callback_data='back_to_catalog')]
+    ]
+)
+
+product_buying_kb = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [InlineKeyboardButton(text='Продукт 1', callback_data='product_buying'),
+         InlineKeyboardButton(text='Продукт 2', callback_data='product_buying'),
+         InlineKeyboardButton(text='Продукт 3', callback_data='product_buying'),
+         InlineKeyboardButton(text='Продукт 4', callback_data='product_buying')],
     ]
 )
