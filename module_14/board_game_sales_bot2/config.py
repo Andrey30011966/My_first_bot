@@ -1,4 +1,4 @@
-API = '7588369021:AAHSth4Z-x7habBCe_RdCvaDmBVvxwMJdAA'
+API = ''
 
 priceM = 1500
 priceL = 2000
